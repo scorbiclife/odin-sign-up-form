@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up | Odin</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1>Odin</h1>
-</body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+        <h1>Odin</h1>
+        <p>Photo by Halie West on Unsplash</p>
+    </div>
+
+    <div>
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+
+      <form action="https://httpbun.com/post" method="post">
+        <p>Let's do this!</p>
+
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first_name" />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last_name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" id="phone-number" name="phone_number" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="password-confirmation">Confirm Password</label>
+        <input type="password" id="password-confirmation" />
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p>Already have an account? <a href="login">Log in</a></p>
+    </div>
+  </body>
 </html>
