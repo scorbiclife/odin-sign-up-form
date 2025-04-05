@@ -6,45 +6,69 @@
     <title>Sign Up | Odin</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <div>
-        <h1>Odin</h1>
-        <p>Photo by Halie West on Unsplash</p>
+  <body class="main">
+    <div class="title">
+      <h1 class="title-text text-title">Odin</h1>
+      <p class="title-footer">Photo by Halie West on Unsplash</p>
     </div>
 
-    <div>
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <em>now</em> to get started.
-      </p>
-      <p>You <em>know</em> you want to.</p>
+    <div class="content">
+      <div class="content-hero">
+        <p class="text-important">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p class="text-important">You <em>know</em> you want to.</p>
+      </div>
 
-      <form action="https://httpbun.com/post" method="post">
-        <p>Let's do this!</p>
+      <form
+        action="https://httpbun.com/post"
+        method="post"
+        id="signup-form"
+        class="form-container">
+        <p class="form-header text-important">Let's do this!</p>
 
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first_name" />
+        <ul class="form-content">
+          <li class="form-content-field">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" />
+          </li>
 
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last_name" />
+          <li class="form-content-field">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" />
+          </li>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
+          <li class="form-content-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </li>
 
-        <label for="phone-number">Phone Number</label>
-        <input type="tel" id="phone-number" name="phone_number" />
+          <li class="form-content-field">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone_number" />
+          </li>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" />
+          <li class="form-content-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" />
+          </li>
 
-        <label for="password-confirmation">Confirm Password</label>
-        <input type="password" id="password-confirmation" />
-
-        <button type="submit">Create Account</button>
+          <li class="form-content-field">
+            <label for="password-confirmation">Confirm Password</label>
+            <input type="password" id="password-confirmation" />
+          </li>
+        </ul>
       </form>
 
-      <p>Already have an account? <a href="login">Log in</a></p>
+      <div class="content-section">
+        <button type="submit" for="signup-form">Create Account</button>
+      </div>
+
+      <div class="content-section">
+        <p>Already have an account? <a href="login">Log in</a></p>
+      </div>
     </div>
   </body>
 </html>

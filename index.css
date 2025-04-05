@@ -1,5 +1,105 @@
+/** resets */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/** layouts and page-level components */
+
+.main {
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.title {
+    width: 40vw;
+}
+
+.content {
+    width: 60vw;
+}
+
+.title {
+    display: flex;
+    position: relative;
+}
+
+.title-text {
+    position: absolute;
+    top: 30%;
+
+    width: 100%;
+    text-align: center;
+}
+
+.text-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title-footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
+
+.content-section,
+.content-hero {
+    padding-inline: 48px;
+}
+
+.content-hero {
+    margin-bottom: 48px;
+}
+
+.form-container {
+    padding: 48px;
+}
+
+.form-header {
+    margin-bottom: 48px;
+}
+
+.form-content {
+    --form-content-width: 480px;
+    --form-content-gap: 24px;
+
+    width: var(--form-content-width);
+
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: var(--form-content-gap);
+}
+
+.form-content-field {
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc((var(--form-content-width) - var(--form-content-gap)) / 2);
+}
+
+/** text and other isolatable utility classes */
+
+.text-important {
+    font-size: 24px;
+    font-weight: 700;
 }
