@@ -30,15 +30,22 @@ ul, ol {
 .title {
     display: flex;
     position: relative;
-    background: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
 }
 
-.title-text {
+.title-banner {
     position: absolute;
-    top: 30%;
+    top: 20%;
 
     width: 100%;
-    text-align: center;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .text-title {
