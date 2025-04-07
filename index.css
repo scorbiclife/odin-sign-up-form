@@ -30,6 +30,7 @@ ul, ol {
 .title {
     display: flex;
     position: relative;
+    background: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
 }
 
 .title-text {
@@ -44,6 +45,7 @@ ul, ol {
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
+    color: white;
 }
 
 .title-footer {
@@ -51,6 +53,11 @@ ul, ol {
     bottom: 1rem;
     width: 100%;
     text-align: center;
+    color: white;
+}
+
+.title-footer a {
+    color: white;
 }
 
 .content {
