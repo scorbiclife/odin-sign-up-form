@@ -101,6 +101,9 @@ ol {
 
 .form-container {
   padding: 48px;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .form-header {
@@ -108,21 +111,33 @@ ol {
 }
 
 .form-content {
-  --form-content-width: 480px;
-  --form-content-gap: 24px;
+  --form-content-width: max(40vw, 480px);
+  --form-gap: 1.5rem;
 
   width: var(--form-content-width);
 
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 
-  gap: var(--form-content-gap);
+  gap: var(--form-gap);
 }
 
 .form-content-field {
+  --form-field-horizontal-gap: 72px;
   display: flex;
   flex-flow: column nowrap;
-  width: calc((var(--form-content-width) - var(--form-content-gap)) / 2);
+  width: calc(
+    (
+        var(--form-content-width) -
+          max(var(--form-field-horizontal-gap, 0), var(--form-gap, 0))
+      ) / 2
+  );
+}
+
+.form-content-field input {
+  width: 100%;
+  height: 2rem;
 }
 
 /** text and other isolatable utility classes */
